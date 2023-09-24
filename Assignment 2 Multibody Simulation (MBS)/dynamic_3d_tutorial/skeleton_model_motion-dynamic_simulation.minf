@@ -1,0 +1,307 @@
+Input file: C:\Users\springnuance\Desktop\Machine Design\Assignment 2 Multibody Simulation (MBS)\dynamic_3d_tutorial\skeleton_model_motion-dynamic_simulation.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2022
+
+
+[1764]
+Info: The Business Analytics flag has been set to Yes.
+
+Solver: Simcenter 3D Motion Version 2007 (13.0) Oct 19 2021 12:18:01 Intel Release 64bit
+Interface: RC2007P1400_rc1 2021-09-29
+Hostname: DESKTOP-JGURQ37
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.10000000000000E-01
+  old MAX.int.step = 5.0000000000000E-02
+  new MAX.int.step = 0.10000000000000E-01
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
+
+License Server is [28000@teamcenter.aalto.fi]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.137002E-12
+
+ Element: ground_part
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: long_link
+    Coordinate    New Value     Original Value  Difference
+    X            -0.12500E-01   -0.12500E-01     0.0000    
+    Y             0.54567        0.54567         0.0000    
+    Z             0.10607        0.10607         0.0000    
+    E0            0.80717        0.80717         0.0000    
+    E1            0.59032        0.59032         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: short_link
+    Coordinate    New Value     Original Value  Difference
+    X             0.12500E-01    0.12500E-01     0.0000    
+    Y             0.10607        0.10607         0.0000    
+    Z             0.10607        0.10607         0.0000    
+    E0            0.38268        0.38268         0.0000    
+    E1            0.92388        0.92388         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: Drv001_RZ
+    Coordinate    New Value     Original Value  Difference
+    Rel.angle    -0.13700E-12   -0.13700E-12     0.0000    
+ Using QR Initial Velocity Method
+
+[1286]
+Warning:  Initial conditions may not be sufficient (DAP2).
+Solution of initial velocities, using QR method:
+
+ Element: ground_part
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: long_link
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.154479    
+    Z             0.666432E-01
+    E0            0.589744E-01
+    E1           -0.806382E-01
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: short_link
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.666432E-01
+    Z             0.666432E-01
+    E0           -0.290245    
+    E1            0.120224    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: Drv001_RZ
+    Coordinate    Velocity
+    Rel.angle     0.628319    
+
+Solution of velocities in local coordinates:
+
+ Element: ground_part
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: long_link
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.154479    
+    Z             0.666432E-01
+    OMEGA_XL     -0.199805    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: short_link
+    Coordinate    Velocity
+    X              0.00000    
+    Y            -0.666432E-01
+    Z             0.666432E-01
+    OMEGA_XL      0.628319    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     41533
+Number of integer data in the system  =     28409
+
+
+[1310]
+Warning:  Number of constraints is greater than or equal to the number
+of generalized coordinates.
+  Number of generalized coordinates =                   29
+  Number of constraints             =                   29
+
+Solution of accelerations in local coordinates:
+
+ Element: ground_part
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: long_link
+    Coordinate    Acceleration
+    X            -0.245848E-18
+    Y            -0.850929E-01
+    Z            -0.418732E-01
+    OMEGAD_XL     0.112846    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: short_link
+    Coordinate    Acceleration
+    X             0.433681E-18
+    Y            -0.418732E-01
+    Z            -0.418732E-01
+    OMEGAD_XL    -0.416334E-16
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    4
+
+Total Number of Degrees of Freedom =   25
+Number of Kinematic Constraints    =   25
+Number of Drivers                  =    1
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    0
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     10
+  Current simulation time =    1.25000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     19
+  Current simulation time =    2.50000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     16
+  Current simulation time =    3.75000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     30
+  Current simulation time =    5.00000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     43
+  Current simulation time =    6.25000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     19
+  Current simulation time =    7.50000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     16
+  Current simulation time =    8.75000
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     30
+  Current simulation time =    10.0000
+
+The number of symbolic factorizations of the Acceleration matrix =                    1
+
+[1349]
+  Final statistics (from DOPRI5) :
+  Number of computed steps            =                 1000
+  Number of accepted steps            =                 1000
+  Number of rejected steps            =                    0
+  Number of acceleration computations =                    1
+  Number of velocity computations     =                 1001
+  Number of position computations     =                 1000
+
+Userdef was internal
+
+    Total elapsed CPU time:   4.004000    
+    Total clock time:          4

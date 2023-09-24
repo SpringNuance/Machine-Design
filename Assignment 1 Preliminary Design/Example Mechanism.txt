@@ -1,0 +1,4 @@
+Some examples to give idea what your topic could be, just examples, you can have different mechanism also (if it will fulfill the requirements). 
+Please note, that calculations are not required and those will be carried out utilizing Siemens NX.
+
+Click https://dynref.engr.illinois.edu/aml.html link to open resource.

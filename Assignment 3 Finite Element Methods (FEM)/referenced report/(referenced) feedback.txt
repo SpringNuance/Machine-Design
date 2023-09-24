@@ -1,0 +1,12 @@
+Feedback for FEM Report from Professor:
+3/5
+Feedback:
+  
+Good cover, detailed intro, good presentation of updated model, 
+good presentation of FEM models (what were forces, position in 
+simulation and directions?), triangle part has no forces in 
+picture, good results table (but show also result pictures), 
+good different shape testing for one part, what was optimized 
+dimension in triangle part?, good MBS rerun, detailed validation 
+chapter, good discussion (perhaps too much what was done vs what 
+was learned)

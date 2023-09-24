@@ -1,0 +1,10 @@
+Feedback for MBS Report from Professor:
+4/5
+good cover (perhaps add a date?), good intro, good kutzbach, 
+what kind of joints are where?, good skeleton model presentation, 
+what is rotational speed?, detailed dynamic model presentation 
+(external force?), don't plot zeros (like first result graph), 
+good location and velocity graphs, good force plots 
+(perhaps add a summary table?), good power calculation, 
+good validation discussion, good discussion, 
+why not exported video?
