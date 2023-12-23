@@ -1,0 +1,72 @@
+
+*** 12:40:24 *** 
+Starting Nastran Exporter
+
+*** 12:40:24 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\NX Exercises (Not 
+graded)\beam_fem\beam_sim1-static_beam.dat
+ 
+*** 12:40:24 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 12:40:24 *** 
+Writing Nastran System section
+
+*** 12:40:24 *** 
+Writing File Management section
+
+*** 12:40:24 *** 
+Writing Executive Control section
+
+*** 12:40:24 *** 
+Writing Case Control section
+
+*** 12:40:24 *** 
+Writing Bulk Data section
+
+*** 12:40:24 *** 
+Writing Nodes
+
+*** 12:40:25 *** 
+Writing Elements
+
+*** 12:40:26 *** 
+Writing Physical Properties
+
+*** 12:40:26 *** 
+Writing Materials
+
+*** 12:40:26 *** 
+Writing Degree-of-Freedom Sets
+
+*** 12:40:26 *** 
+Writing Loads and Constraints
+
+*** 12:40:26 *** 
+Writing Coordinate Systems
+
+*** 12:40:26 *** 
+Validating Solution Setup
+
+*** 12:40:26 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 43217    |
+| FORCE    | 85       |
+| GRAV     | 1        |
+| GRID     | 88348    |
+| LOAD     | 1        |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 129      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 12:40:26 *** 
+Nastran Deck Successfully Written
+

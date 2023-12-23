@@ -1,0 +1,70 @@
+
+*** 12:58:56 *** 
+Starting Nastran Exporter
+
+*** 12:58:56 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\NX Exercises (Not 
+graded)\beam_fem\beam_sim1-beam_vibration.dat
+ 
+*** 12:58:56 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 12:58:56 *** 
+Writing Nastran System section
+
+*** 12:58:56 *** 
+Writing File Management section
+
+*** 12:58:56 *** 
+Writing Executive Control section
+
+*** 12:58:56 *** 
+Writing Case Control section
+
+*** 12:58:56 *** 
+Writing Bulk Data section
+
+*** 12:58:56 *** 
+Writing Nodes
+
+*** 12:58:57 *** 
+Writing Elements
+
+*** 12:58:58 *** 
+Writing Physical Properties
+
+*** 12:58:58 *** 
+Writing Materials
+
+*** 12:58:58 *** 
+Writing Degree-of-Freedom Sets
+
+*** 12:58:58 *** 
+Writing Loads and Constraints
+
+*** 12:58:58 *** 
+Writing Coordinate Systems
+
+*** 12:58:58 *** 
+Validating Solution Setup
+
+*** 12:58:58 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 43158    |
+| EIGRL    | 1        |
+| GRID     | 88193    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 141      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 12:58:58 *** 
+Nastran Deck Successfully Written
+

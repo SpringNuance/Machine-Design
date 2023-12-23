@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html><html><head><meta charset="UTF-8"><style id="NXStyle" type="text/css">                      /* General body description */          body          {              background-color: rgb(240,240,240);              color: black;              font-size:   12px;              font-family:   'Arial', 'Trebuchet MS', 'Times New Roman', Helvetica, sans-serif;              border: 0px solid black;          }          h1          {              font-size: 1.2em;              margin-top: .2cm;              margin-bottom: .2cm;              font-weight: bold;          }          h2          {              font-size: 1.0em;              margin-top: .2cm;              margin-bottom: .2cm;              font-weight: bold;          }          h3          {              border-spacing: 0px;              margin-top: .25cm;              margin-bottom: .1cm;              font-size: 12px;              font-weight: bold;          }          h4          {              font-size: .8em;              margin-top: .2cm;              margin-bottom: .2cm;          }          img          {              vertical-align: bottom;          }          .NXtablePlain          {              width: 100%;              font-size: 12px;              text-align: left;              margin-top: 0px;              font-style: normal;              font-weight: normal;              border-spacing: 0px;              border-collapse: collapse;              border: 0px solid black;              vertical-align: top;          }          table.NXCellPlain          {              font-size: 12px;              text-align: left;              margin-top: 0px;              font-style: normal;              font-weight: normal;              border-spacing: 0px;              border-collapse: collapse;              border: 0px solid black;              vertical-align: top;          }          /* ========================================================================*/          /* Default NX table settings                                               */          /* ========================================================================*/          .NXtable          {              width: 100% ;              color: black;              font-size: 12px;              text-align: left;              margin-top: 5px;              font-style: normal;              font-weight: normal;              border-spacing: 0px;              border-collapse: collapse;              border: 1px solid rgb(220,220,220);              vertical-align: top;          }          #NXInfoHeader          {              border: 1px solid rgb(100,100,100);              margin-top: .5cm;          }          .NXtable th          {              padding: 2px;              background-color: rgb(240,240,240);          }          .NXtable td          {              padding: 2px;          }          .NXtable td#Column0          {              font-weight: bold;              width: 220px;              min-width: 220px;              max-width: 220px;          }          .NXtable th#Column0          {            font-weight: bold;            width: 220px;            min-width: 220px;            max-width: 220px;          }          /* Doubles are right aligned. */          #columndouble          {              text-align: right;              font-weight: normal;              border-width: 1px;              width: 220px;              border-spacing: 1px;              border-collapse: collapse;          }          /* Exp column width */          #expColumn0          {              width: 50%;          }                    td.light_background          {              background-color: rgb(255,255,255);          }          td.dark_background          {              background-color: rgb(50,50,50);          }          /* Apply fixed width for number column*/          td.NXNumberColumn, th.NXNumberColumn, td.NXNumberColumn#Column0          {              width: 2.5em;              min-width: 2.5em;          }          /* Apply fixed width for Date and time column*/          td.NXDateTimeColumn, th.NXDateTimeColumn, td.NXDateTimeColumn#Column0          {              width: 9em;              min-width: 9em;          }          /* ========================================================================*/          /* Internal Table Borders                                                  */          /* ========================================================================*/          .NXtable td, .NXtable th          {              border: 1px solid rgb(220,220,220);          }          .NXtable tr td,          .NXtable tr th          {          }          .NXtable tr:last-child td          {          }          .NXtable tr td:first-child,          .NXtable tr th:first-child          {          }          .NXtable tr td,          .NXtable tr th          {          }          .NXtable th          {          text-align: left;          }          /* Banding */          .NXtable tr:nth-child(even)          {              background: rgb(250,250,250)          }          .NXtable tr:nth-child(odd)          {              background: rgb(255,255,255)          }          /* Prevent banding on plain table */          .NXtablePlain tr:nth-child(odd)          {              background: rgb(255,255,255)          }          /* ========================================================================*/          /* Paragraph                                                               */          /* ========================================================================*/          .NXParagraph          {              font-family: Arial, 'Times New Roman', 'Trebuchet MS', Helvetica, sans-serif;              font-size: 12px;          }          /* ========================================================================*/          /* The header table located at the top of the information window           */          /* ========================================================================*/          .NXtable#introTable table          {              vertical-align: bottom;              text-align: left;              font-style: normal;              font-weight: bold;              font-size: 12px;              border-spacing: 0px;              border-width: 0px;          }          .NXtable#introTable td#Column0          {              font-weight: bold;              width:  20em;          }          .NXtable#introTable th#Column0          {            font-weight: bold;            width:  20em;          }          .NXtable#introTable td          {              border: 0px;          }          .NXtable#introTable th          {              border: 0px;              text-align: left;          }          div          {              clear: both;          }          pre          {              font-size: 13px;              color: black;              font-family: Lucinda Console,Consolas,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;              white-space: pre-wrap;              margin: 0px;              margin-top: 5px;              padding: 4px;              border-top: 1px solid rgb(220,220,220);              border-bottom: 1px solid rgb(220,220,220);              background-color: rgb(255,255,255);          }          /* ========================================================================*/          /* Collapsible Groups                                                      */          /* ========================================================================*/          /* General NXGroupHeader definition */          .NXGroupHeader h2          {              padding: 4px;              text-align: left;              font-size: 14px;              font-weight: normal;              color: rgb(0,100,135);              background-color: rgb(255,255,255);              cursor: pointer;              margin-top: .25cm;              margin-bottom: 0cm;          }          /* NXGroupHeader border definitons */          .NXGroupHeader_ExpandedOdd h2          {              border-top: 1px solid rgb(220,220,220);              border-left: 1px solid rgb(220,220,220);              border-right: 1px solid rgb(220,220,220);          }          .NXGroupHeader_ExpandedEven h2          {              border-top: 1px solid rgb(220,220,220);              border-left: 1px solid rgb(220,220,220);              border-right: 1px solid rgb(220,220,220);          }          .NXGroupHeader_CollapsedOdd h2          {              border: 1px solid rgb(220,220,220);          }          .NXGroupHeader_CollapsedEven h2          {              border: 1px solid rgb(220,220,220);          }          /* NXGroupHeader expanded and collapsed icons and background */          .NXGroupHeader_ExpandedEven h2          {              background: rgb(240,240,240) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nO2SsQoCMRBEJzktDwvt/AL9Ahs/P1+RIikSSBEuEJTTu2zWwkYOrpATBHFgm2H2sbAjmBlLJBdt/wGfAaymxu5UeN1ecRl79OUGUQkNFTRUwP0W++G80Vrn2QuoEu40YqABgitkfU5DBMmMlNLhNS+mRVJKtTHGo7UWxhg45+C9RwgBXdch5+yZ2c0C3tX3v/ADgAcHZFHeo58aBQAAAABJRU5ErkJggg==) right top no-repeat;          }          .NXGroupHeader_ExpandedEven h2:hover          {              background: rgb(175,215,225) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nO2SsQoCMRBEJzktDwvt/AL9Ahs/P1+RIikSSBEuEJTTu2zWwkYOrpATBHFgm2H2sbAjmBlLJBdt/wGfAaymxu5UeN1ecRl79OUGUQkNFTRUwP0W++G80Vrn2QuoEu40YqABgitkfU5DBMmMlNLhNS+mRVJKtTHGo7UWxhg45+C9RwgBXdch5+yZ2c0C3tX3v/ADgAcHZFHeo58aBQAAAABJRU5ErkJggg==) right top no-repeat;          }          .NXGroupHeader_CollapsedEven h2          {              background: rgb(240,240,240) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nM2TMWrDQBBF/1oOsUgkg+NUbtQmVQgGpcgpjM/gW7jJVXKAHCAXSBlIuSq3EIQVSLKdjbQ741o2a4hdOAPT/f/4w2cEM+OU6Z3k/v+A2yfHo7ThLMviowAX0RrBdY08z++OAtTtGnW7gZTSqxG7NY7ShoNohU37AzP4hiCHfh0hsBZsbjD5fR5KKStvAkcOjWvRkIVwFoG1EETokYNghjGmc05/F/C6fI/LsrxXSuHlbfYhmDANF3OttdJaQ1eV6hiY2btXj18cPXxykiSpT7OXoAM3YxATiqI4IDqQAMBlGIYTALFPs9fCX+f8v7AFNxu42fSwh50AAAAASUVORK5CYII= ) right top no-repeat;          }          .NXGroupHeader_CollapsedEven h2:hover          {              background: rgb(175,215,225) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nM2TMWrDQBBF/1oOsUgkg+NUbtQmVQgGpcgpjM/gW7jJVXKAHCAXSBlIuSq3EIQVSLKdjbQ741o2a4hdOAPT/f/4w2cEM+OU6Z3k/v+A2yfHo7ThLMviowAX0RrBdY08z++OAtTtGnW7gZTSqxG7NY7ShoNohU37AzP4hiCHfh0hsBZsbjD5fR5KKStvAkcOjWvRkIVwFoG1EETokYNghjGmc05/F/C6fI/LsrxXSuHlbfYhmDANF3OttdJaQ1eV6hiY2btXj18cPXxykiSpT7OXoAM3YxATiqI4IDqQAMBlGIYTALFPs9fCX+f8v7AFNxu42fSwh50AAAAASUVORK5CYII= ) right top no-repeat;          }          .NXGroupHeader_ExpandedOdd h2          {              background: rgb(255,255,255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nO2SsQoCMRBEJzktDwvt/AL9Ahs/P1+RIikSSBEuEJTTu2zWwkYOrpATBHFgm2H2sbAjmBlLJBdt/wGfAaymxu5UeN1ecRl79OUGUQkNFTRUwP0W++G80Vrn2QuoEu40YqABgitkfU5DBMmMlNLhNS+mRVJKtTHGo7UWxhg45+C9RwgBXdch5+yZ2c0C3tX3v/ADgAcHZFHeo58aBQAAAABJRU5ErkJggg==) right top no-repeat;          }          .NXGroupHeader_ExpandedOdd h2:hover          {              background: rgb(175,215,225) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmklEQVR4nO2SsQoCMRBEJzktDwvt/AL9Ahs/P1+RIikSSBEuEJTTu2zWwkYOrpATBHFgm2H2sbAjmBlLJBdt/wGfAaymxu5UeN1ecRl79OUGUQkNFTRUwP0W++G80Vrn2QuoEu40YqABgitkfU5DBMmMlNLhNS+mRVJKtTHGo7UWxhg45+C9RwgBXdch5+yZ2c0C3tX3v/ADgAcHZFHeo58aBQAAAABJRU5ErkJggg==) right top no-repeat;          }          .NXGroupHeader_CollapsedOdd h2          {              background: rgb(255,255,255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nM2TMWrDQBBF/1oOsUgkg+NUbtQmVQgGpcgpjM/gW7jJVXKAHCAXSBlIuSq3EIQVSLKdjbQ741o2a4hdOAPT/f/4w2cEM+OU6Z3k/v+A2yfHo7ThLMviowAX0RrBdY08z++OAtTtGnW7gZTSqxG7NY7ShoNohU37AzP4hiCHfh0hsBZsbjD5fR5KKStvAkcOjWvRkIVwFoG1EETokYNghjGmc05/F/C6fI/LsrxXSuHlbfYhmDANF3OttdJaQ1eV6hiY2btXj18cPXxykiSpT7OXoAM3YxATiqI4IDqQAMBlGIYTALFPs9fCX+f8v7AFNxu42fSwh50AAAAASUVORK5CYII= ) right top no-repeat;          }          .NXGroupHeader_CollapsedOdd h2:hover          {              background: rgb(175,215,225) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9UlEQVR4nM2TMWrDQBBF/1oOsUgkg+NUbtQmVQgGpcgpjM/gW7jJVXKAHCAXSBlIuSq3EIQVSLKdjbQ741o2a4hdOAPT/f/4w2cEM+OU6Z3k/v+A2yfHo7ThLMviowAX0RrBdY08z++OAtTtGnW7gZTSqxG7NY7ShoNohU37AzP4hiCHfh0hsBZsbjD5fR5KKStvAkcOjWvRkIVwFoG1EETokYNghjGmc05/F/C6fI/LsrxXSuHlbfYhmDANF3OttdJaQ1eV6hiY2btXj18cPXxykiSpT7OXoAM3YxATiqI4IDqQAMBlGIYTALFPs9fCX+f8v7AFNxu42fSwh50AAAAASUVORK5CYII= ) right top no-repeat;          }          /* NXGroupBody definitions */          div .NXGroupBody_ExpandedEven          {              padding: 6px;              border-bottom: 1px solid rgb(220,220,220);              border-left: 1px solid rgb(220,220,220);              border-right: 1px solid rgb(220,220,220);              background-color: rgb(240,240,240);          }          div .NXGroupBody_ExpandedOdd          {              padding: 6px;              border-bottom: 1px solid rgb(220,220,220);              border-left: 1px solid rgb(220,220,220);              border-right: 1px solid rgb(220,220,220);              background-color: rgb(255,255,255);          }          /* ========================================================================*/          /* All string api where the data comes in as a single line.  Old stuff     */          /* ========================================================================*/          .SimpleLine          {          }          /* ========================================================================*/          /* Attention levels    */          /* ========================================================================*/                    .bold {              font-weight: bold;          }          .attentionLevel3 {              color: blue;          }                    /* ========================================================================*/          /* Matrix table settings                                               */          /* ========================================================================*/          .matrixContainer          {              display: flex;              flex-direction: row;              flex-wrap: wrap;              position: relative;          }                    .matrixContainer h3          {            flex: 0 0 100%;          }                    .units          {            flex-grow: 1;            margin-left: 20px;            margin-bottom: 5px;            position: absolute;            bottom: 0;          }                    .NXtable.mathMatrix          {              width: 120px;              color: black;              font-size: 12px;              text-align: center;              margin-top: 5px;              font-style: normal;              font-weight: normal;              border-spacing: 0px;              border-collapse: collapse;              border: 0px white;              vertical-align: top;              position: relative;              left: 5px;              flex-grow: 1;          }          /* Create Brackets */          .mathMatrix:before, .mathMatrix:after          {              content: '';              position: absolute;              top: 0;              border: 1px solid #000;              width: 5px;              height: 100%;          }          .mathMatrix:before {              left: -5px;              border-right: 0;          }          .mathMatrix:after {              right: -5px;              border-left: 0;          }          .NXtable.mathMatrix th          {              padding: 5px;              background-color: white;          }          .NXtable.mathMatrix td          {              padding: 5px;              width: 30px;              vertical-align: initial;          }          .NXtable.mathMatrix td#Column0          {              font-weight: normal;              padding: 3px;              width: 30px;              min-width: inherit;              max-width: inherit;          }          .NXtable.mathMatrix th#Column0          {            font-weight: normal;            padding: 3px;            width: 30px;            min-width: inherit;            max-width: inherit;          }          .NXtable.mathMatrix td, .NXtable.mathMatrix th          {              border: 0px solid rgb(220,220,220);          }          /* Banding */          .NXtable.mathMatrix tr:nth-child(even)          {              background: white;          }          .NXtable.mathMatrix tr:nth-child(odd)          {              background: white;          }                </style><style id="NXStylePreNoWrap" type="text/css">pre.NoWrapText{    white-space: pre;    word-wrap: normal;    float: left;}</style><script>function toggleExpandCollapse(p, e) {   var header = null;   var body = null;   for (var i = 0; i < p.childNodes.length; i++) {      if (hasClass(p.childNodes[i], 'NXGroupHeader'))       {           header = p.childNodes[i];           break;       }   }   for (var i = 0; i < p.childNodes.length; i++) {       if (hasClass(p.childNodes[i], 'NXGroupBody')) {           body = p.childNodes[i];           break;       }   }   if (hasClass(p, 'NXExpanded'))   {       replaceClass(p, 'NXExpanded', 'NXCollapsed');       if (header != null)           header.className = header.className.replace('Expanded', 'Collapsed');       if (body != null)       {           body.className = body.className.replace('Expanded', 'Collapsed');           body.style.display = 'none';       }   }   else if (hasClass(p, 'NXCollapsed'))   {       replaceClass(p, 'NXCollapsed', 'NXExpanded');       if (header != null)           header.className = header.className.replace('Collapsed', 'Expanded');       if (body != null)       {           body.className = body.className.replace('Collapsed', 'Expanded');           body.style.display = 'block';       }   }   if (e != null)   {       e.cancelBubble = true;       if (e.stopPropagation) {           e.stopPropagation();       }       else {           e.returnValue = false;       }       if (!hasClass(p, 'NXExpandModified'))           p.className = p.className + ' NXExpandModified'   }}function hasClass(element, cls){    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;}function replaceClass(element, cls, rep){    var re = new RegExp(cls, 'g');    element.className = element.className.replace(re, rep);}function collapseAllGroups(collapsed, append){    var collapsibleGroups;    if (collapsed)    {       collapsibleGroups = [].slice.apply(getElementsByClassName(document, "NXExpanded"));    }    else    {       collapsibleGroups = [].slice.apply(getElementsByClassName(document, "NXCollapsed"));    }    var arrayLength = collapsibleGroups.length;    for (var i = 0; i < arrayLength; i++)    {       if (!append || !hasClass(collapsibleGroups[i], 'NXExpandModified'))           toggleExpandCollapse(collapsibleGroups[i], null);    }}function getElementsByClassName(node, classname){    var a = [];    var re = new RegExp('(^| )' + classname + '( |$)');    var els = node.getElementsByTagName("*");    for (var i = 0, j = els.length; i < j; i++)        if (re.test(els[i].className))a.push(els[i]);    return a;}</script></head><body id="NXBody" contenteditable="true"><header></header><table class="NXtable" id="NXInfoHeader"><tbody><tr class="NXRow"><td id="Column0">Information listing created by</td> <td id="Column1">springnuance</td> </tr><tr class="NXRow"><td id="Column0">Date</td> <td id="Column1">08-Oct-2023 02:52:42</td> </tr><tr class="NXRow"><td id="Column0">Current work part</td> <td id="Column1">C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite Element Methods (FEM)\FEM_I_beam\model21_sim3.sim</td> </tr><tr class="NXRow"><td id="Column0">Node name</td> <td id="Column1">desktop-jgurq37</td> </tr></tbody></table><br><pre class="NoWrapText"> 
+------------------------------------------------------------
+ 
+          Solution Model Setup Check Error Summary 
+ 
+------------------------------------------------------------
+ 
+ Solver is NX Design Simulation
+
+ Environment: NX Design Simulation - Structural
+
+ Solution is Linear Statics - Single Constraint
+ 
+------------------------------------------------------------
+ 
+
+
+Mesh-Based Errors Summary
+-------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Material-Based Errors Summary
+-----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Solution-Based Errors Summary
+-----------------------------
+
+Iterative Solver Option
+More than 80 percent of the elements in this model are 3D elements.
+It is therefore recommended that you turn ON the Element Iterative Solver in the "Edit 
+Solution" dialog.
+
+Total: 0 errors and 0 warnings
+
+
+Load/BC-Based Errors Summary
+----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Nastran Model Setup Check completed
+
+
+
+
+*** 02:52:49 *** 
+Starting Nastran Exporter
+
+*** 02:52:49 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 02:52:49 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 02:52:49 *** 
+Writing Nastran System section
+
+*** 02:52:49 *** 
+Writing File Management section
+
+*** 02:52:49 *** 
+Writing Executive Control section
+
+*** 02:52:49 *** 
+Writing Case Control section
+
+*** 02:52:50 *** 
+Writing Bulk Data section
+
+*** 02:52:50 *** 
+Writing Nodes
+
+*** 02:52:52 *** 
+Writing Elements
+
+*** 02:52:53 *** 
+Writing Physical Properties
+
+*** 02:52:53 *** 
+Writing Materials
+
+*** 02:52:53 *** 
+Writing Degree-of-Freedom Sets
+
+*** 02:52:53 *** 
+Writing Loads and Constraints
+
+*** 02:52:53 *** 
+Writing Coordinate Systems
+
+*** 02:52:53 *** 
+Validating Solution Setup
+
+*** 02:52:53 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 600      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 02:52:53 *** 
+Nastran Deck Successfully Written
+
+</pre><div></div><table class="NXtable" id="NXInfoHeader"><tbody><tr class="NXRow"><td id="Column0">Information listing created by</td> <td id="Column1">springnuance</td> </tr><tr class="NXRow"><td id="Column0">Date</td> <td id="Column1">08-Oct-2023 02:55:06</td> </tr><tr class="NXRow"><td id="Column0">Current work part</td> <td id="Column1">C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite Element Methods (FEM)\FEM_I_beam\model21_sim3.sim</td> </tr><tr class="NXRow"><td id="Column0">Node name</td> <td id="Column1">desktop-jgurq37</td> </tr></tbody></table><br><pre class="NoWrapText"> 
+------------------------------------------------------------
+ 
+          Solution Model Setup Check Error Summary 
+ 
+------------------------------------------------------------
+ 
+ Solver is NX Design Simulation
+
+ Environment: NX Design Simulation - Structural
+
+ Solution is Linear Statics - Single Constraint
+ 
+------------------------------------------------------------
+ 
+
+
+Mesh-Based Errors Summary
+-------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Material-Based Errors Summary
+-----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Solution-Based Errors Summary
+-----------------------------
+
+Iterative Solver Option
+More than 80 percent of the elements in this model are 3D elements.
+It is therefore recommended that you turn ON the Element Iterative Solver in the "Edit 
+Solution" dialog.
+
+Total: 0 errors and 0 warnings
+
+
+Load/BC-Based Errors Summary
+----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Nastran Model Setup Check completed
+
+
+
+
+*** 02:55:08 *** 
+Starting Nastran Exporter
+
+*** 02:55:08 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 02:55:09 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 02:55:09 *** 
+Writing Nastran System section
+
+*** 02:55:09 *** 
+Writing File Management section
+
+*** 02:55:09 *** 
+Writing Executive Control section
+
+*** 02:55:09 *** 
+Writing Case Control section
+
+*** 02:55:09 *** 
+Writing Bulk Data section
+
+*** 02:55:09 *** 
+Writing Nodes
+
+*** 02:55:11 *** 
+Writing Elements
+
+*** 02:55:12 *** 
+Writing Physical Properties
+
+*** 02:55:12 *** 
+Writing Materials
+
+*** 02:55:12 *** 
+Writing Degree-of-Freedom Sets
+
+*** 02:55:12 *** 
+Writing Loads and Constraints
+
+*** 02:55:12 *** 
+Writing Coordinate Systems
+
+*** 02:55:12 *** 
+Validating Solution Setup
+
+*** 02:55:12 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 600      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 02:55:12 *** 
+Nastran Deck Successfully Written
+
+</pre><div></div><table class="NXtable" id="NXInfoHeader"><tbody><tr class="NXRow"><td id="Column0">Information listing created by</td> <td id="Column1">springnuance</td> </tr><tr class="NXRow"><td id="Column0">Date</td> <td id="Column1">08-Oct-2023 02:57:24</td> </tr><tr class="NXRow"><td id="Column0">Current work part</td> <td id="Column1">C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite Element Methods (FEM)\FEM_I_beam\model21_sim3.sim</td> </tr><tr class="NXRow"><td id="Column0">Node name</td> <td id="Column1">desktop-jgurq37</td> </tr></tbody></table><br><pre class="NoWrapText"> 
+------------------------------------------------------------
+ 
+          Solution Model Setup Check Error Summary 
+ 
+------------------------------------------------------------
+ 
+ Solver is NX Design Simulation
+
+ Environment: NX Design Simulation - Structural
+
+ Solution is Linear Statics - Single Constraint
+ 
+------------------------------------------------------------
+ 
+
+
+Mesh-Based Errors Summary
+-------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Material-Based Errors Summary
+-----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Solution-Based Errors Summary
+-----------------------------
+
+Iterative Solver Option
+More than 80 percent of the elements in this model are 3D elements.
+It is therefore recommended that you turn ON the Element Iterative Solver in the "Edit 
+Solution" dialog.
+
+Total: 0 errors and 0 warnings
+
+
+Load/BC-Based Errors Summary
+----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Nastran Model Setup Check completed
+
+
+
+
+*** 02:57:26 *** 
+Starting Nastran Exporter
+
+*** 02:57:26 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 02:57:26 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 02:57:26 *** 
+Writing Nastran System section
+
+*** 02:57:26 *** 
+Writing File Management section
+
+*** 02:57:26 *** 
+Writing Executive Control section
+
+*** 02:57:26 *** 
+Writing Case Control section
+
+*** 02:57:27 *** 
+Writing Bulk Data section
+
+*** 02:57:27 *** 
+Writing Nodes
+
+*** 02:57:28 *** 
+Writing Elements
+
+*** 02:57:30 *** 
+Writing Physical Properties
+
+*** 02:57:30 *** 
+Writing Materials
+
+*** 02:57:30 *** 
+Writing Degree-of-Freedom Sets
+
+*** 02:57:30 *** 
+Writing Loads and Constraints
+
+*** 02:57:30 *** 
+Writing Coordinate Systems
+
+*** 02:57:30 *** 
+Validating Solution Setup
+
+*** 02:57:30 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 600      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 02:57:30 *** 
+Nastran Deck Successfully Written
+
+</pre><div></div><table class="NXtable" id="NXInfoHeader"><tbody><tr class="NXRow"><td id="Column0">Information listing created by</td> <td id="Column1">springnuance</td> </tr><tr class="NXRow"><td id="Column0">Date</td> <td id="Column1">08-Oct-2023 02:59:42</td> </tr><tr class="NXRow"><td id="Column0">Current work part</td> <td id="Column1">C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite Element Methods (FEM)\FEM_I_beam\model21_sim3.sim</td> </tr><tr class="NXRow"><td id="Column0">Node name</td> <td id="Column1">desktop-jgurq37</td> </tr></tbody></table><br><pre class="NoWrapText"> 
+------------------------------------------------------------
+ 
+          Solution Model Setup Check Error Summary 
+ 
+------------------------------------------------------------
+ 
+ Solver is NX Design Simulation
+
+ Environment: NX Design Simulation - Structural
+
+ Solution is Linear Statics - Single Constraint
+ 
+------------------------------------------------------------
+ 
+
+
+Mesh-Based Errors Summary
+-------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Material-Based Errors Summary
+-----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Solution-Based Errors Summary
+-----------------------------
+
+Iterative Solver Option
+More than 80 percent of the elements in this model are 3D elements.
+It is therefore recommended that you turn ON the Element Iterative Solver in the "Edit 
+Solution" dialog.
+
+Total: 0 errors and 0 warnings
+
+
+Load/BC-Based Errors Summary
+----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Nastran Model Setup Check completed
+
+
+
+
+*** 02:59:47 *** 
+Starting Nastran Exporter
+
+*** 02:59:47 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 02:59:47 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 02:59:47 *** 
+Writing Nastran System section
+
+*** 02:59:47 *** 
+Writing File Management section
+
+*** 02:59:47 *** 
+Writing Executive Control section
+
+*** 02:59:47 *** 
+Writing Case Control section
+
+*** 02:59:48 *** 
+Writing Bulk Data section
+
+*** 02:59:48 *** 
+Writing Nodes
+
+*** 02:59:50 *** 
+Writing Elements
+
+*** 02:59:51 *** 
+Writing Physical Properties
+
+*** 02:59:51 *** 
+Writing Materials
+
+*** 02:59:51 *** 
+Writing Degree-of-Freedom Sets
+
+*** 02:59:51 *** 
+Writing Loads and Constraints
+
+*** 02:59:51 *** 
+Writing Coordinate Systems
+
+*** 02:59:51 *** 
+Validating Solution Setup
+
+*** 02:59:51 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 600      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 02:59:51 *** 
+Nastran Deck Successfully Written
+
+</pre><div></div><table class="NXtable" id="NXInfoHeader"><tbody><tr class="NXRow"><td id="Column0">Information listing created by</td> <td id="Column1">springnuance</td> </tr><tr class="NXRow"><td id="Column0">Date</td> <td id="Column1">08-Oct-2023 03:01:42</td> </tr><tr class="NXRow"><td id="Column0">Current work part</td> <td id="Column1">C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite Element Methods (FEM)\FEM_I_beam\model21_sim3.sim</td> </tr><tr class="NXRow"><td id="Column0">Node name</td> <td id="Column1">desktop-jgurq37</td> </tr></tbody></table><br><pre class="NoWrapText"> 
+------------------------------------------------------------
+ 
+          Solution Model Setup Check Error Summary 
+ 
+------------------------------------------------------------
+ 
+ Solver is NX Design Simulation
+
+ Environment: NX Design Simulation - Structural
+
+ Solution is Linear Statics - Single Constraint
+ 
+------------------------------------------------------------
+ 
+
+
+Mesh-Based Errors Summary
+-------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Material-Based Errors Summary
+-----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Solution-Based Errors Summary
+-----------------------------
+
+Iterative Solver Option
+More than 80 percent of the elements in this model are 3D elements.
+It is therefore recommended that you turn ON the Element Iterative Solver in the "Edit 
+Solution" dialog.
+
+Total: 0 errors and 0 warnings
+
+
+Load/BC-Based Errors Summary
+----------------------------
+
+Total: 0 errors and 0 warnings
+
+
+Nastran Model Setup Check completed
+
+
+
+
+*** 03:01:49 *** 
+Starting Nastran Exporter
+
+*** 03:01:49 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 03:01:49 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 03:01:49 *** 
+Writing Nastran System section
+
+*** 03:01:49 *** 
+Writing File Management section
+
+*** 03:01:49 *** 
+Writing Executive Control section
+
+*** 03:01:49 *** 
+Writing Case Control section
+
+*** 03:01:50 *** 
+Writing Bulk Data section
+
+*** 03:01:50 *** 
+Writing Nodes
+
+*** 03:01:51 *** 
+Writing Elements
+
+*** 03:01:53 *** 
+Writing Physical Properties
+
+*** 03:01:53 *** 
+Writing Materials
+
+*** 03:01:53 *** 
+Writing Degree-of-Freedom Sets
+
+*** 03:01:53 *** 
+Writing Loads and Constraints
+
+*** 03:01:53 *** 
+Writing Coordinate Systems
+
+*** 03:01:53 *** 
+Validating Solution Setup
+
+*** 03:01:53 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 600      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 03:01:53 *** 
+Nastran Deck Successfully Written
+
+</pre><div></div></body></html>

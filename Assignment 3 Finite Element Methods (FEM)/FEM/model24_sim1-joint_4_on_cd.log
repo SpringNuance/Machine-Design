@@ -1,0 +1,118 @@
+Simcenter Nastran 2022.1 (Intel64 Family 6 Model 167 Stepping 1 Windows 10  ) Control File:
+--------------------------------------------------------------------------------------
+Nastran BUFFSIZE=32769 $(c:/siemens/nx2027/nxnastran/conf/nastran.rcf[1])
+Nastran BUFFPOOL=20.0X $(c:/siemens/nx2027/nxnastran/conf/nastran.rcf[4])
+Nastran DIAGA=128 DIAGB=0 $(c:/siemens/nx2027/nxnastran/conf/nastran.rcf[8])
+Nastran SYSTEM(442)=2 $(command line[5])
+Nastran REAL=4252631040 $(Memory limit for MPI and other specialized modules)
+JID='\\home.org.aalto.fi\singhp2\data\Documents\MechanicsmReport\DYNAMIC_3D_ZOOM (2)\DYNAMIC_3D_ZOOM\model24_sim1-joint_4_on_cd.dat'
+OUT='./model24_sim1-joint_4_on_cd'
+MEM=1914391552
+MACH='Intel64 Family 6 Model 167 Stepping 1'
+OPER='Windows 10'
+OSV=' '
+MODEL='11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (D21-0443)'
+CONFIG=8666
+NPROC=12
+symbol=DELDIR='c:/siemens/nx2027/nxnastran/scnas/nast/del' $(program default)
+symbol=DEMODIR='c:/siemens/nx2027/nxnastran/scnas/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/siemens/nx2027/nxnastran/scnas/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='c:/siemens/nx2027/nxnastran/scnas/nast/tpl' $(program default)
+SDIR='c:/users/singhp2/appdata/local/temp/model24_sim1-joint_4_on_cd.T23048_34'
+DBS='c:/users/singhp2/appdata/local/temp/model24_sim1-joint_4_on_cd.T23048_34'
+SCR=yes
+SMEM=20.0X
+NEWDEL='c:/siemens/nx2027/nxnastran/scnas/em64tntl/SSS'
+DEL='NXNDEF'
+AUTH='28000@teamcenter.aalto.fi'
+AUTHQUE=0
+MSGCAT='c:/siemens/nx2027/nxnastran/scnas/em64tntl/analysis.msg'
+MSGDEST='f06'
+PROG=bundle
+NEWS='c:/siemens/nx2027/nxnastran/scnas/nast/news.txt'
+UMATLIB='libnxumat.dll'
+UCRPLIB='libucreep.dll'
+USOLLIB='libusol.dll'
+--------------------------------------------------------------------------------------
+NXN_ISHELLPATH=C:\Siemens\NX2027\nxnastran\bin
+NXN_JIDPATH=
+PATH=c:/siemens/nx2027/nxnastran/scnas/em64tntl;c:/siemens/nx2027/nxnastran/scnas/em64tntl/sysnoise;c:/siemens/nx2027/nxnastran/scnas/em64tntl/softwareanalytics;c:/siemens/nx2027/nxnastran/scnas/em64tntl/samcef;c:/siemens/nx2027/nxnastran/scnas/em64tntl/impi/bin;c:/siemens/nx2027/nxnastran/scnas/em64tntl/monitor;C:\Siemens\NX2027\nxbin;C:\Program Files\IBM\ILOG\CPLEX_Studio2211\opl\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio2211\opl\oplide\;C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cplex\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio2211\cpoptimizer\bin\x64_win64;C:\GAMS\44;C:\GAMS\44\gbin;C:\Program Files\Eclipse Foundation\OpenJDK\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\intel64\libfabric\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\intel64\libfabric\bin\utils;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\ia32;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\intel64;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\;C:\Program Files\PerkinElmerInformatics\ChemOffice\ChemScript\Lib;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\MEGA6;C:\VERSANT\9\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\ArcGIS\EsriProductionMapping\Desktop10.8\Bin;C:\Program Files (x86)\ArcGIS\MaritimeCharting\Desktop10.8\Bin;C:\Siemens\NX2027\CAPITALINTEGRATION\capitalnxremote\;C:\Siemens\TCVis14.0\Products\Mockup\ClearanceDB;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Program Files\Wolfram Research\WolframScript\;C:\Programs\Matlab\runtime\win64;C:\Programs\Matlab\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Common Files\AspenTech Shared\;C:\Program Files\Git\cmd;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\MEGA11;C:\Program Files\TortoiseHg\;C:\Program Files\gs\gs10.00.0\bin;C:\Users\singhp2\AppData\Local\Microsoft\WindowsApps;
+Command Line: model24_sim1-joint_4_on_cd.dat prog=bundle old=no scratch=yes sys442=2
+Current Dir: \\home.org.aalto.fi\singhp2\data\Documents\MechanicsmReport\DYNAMIC_3D_ZOOM (2)\DYNAMIC_3D_ZOOM
+Executable:  c:/siemens/nx2027/nxnastran/scnas/em64tntl/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+--------------------------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                    32457 MB
+ Physical memory available:          18626 MB
+ Paging file size:                   37321 MB
+ Paging file size available:         19319 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213565 MB
+--------------------------------------------------------------------------------------
+System configuration:
+ Hostname:         D21-0443.org.aalto.fi
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 167 Stepping 1 Windows 10  
+ Model:            11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz
+ Clock freq.:      2808 MHz
+ Number of CPUs:   12
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  32457 MB
+ Virtual memory:   37321 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: Remote capabilities not available.
+--------------------------------------------------------------------------------------
+Simcenter Nastran started  Sun Oct  1 20:07:34 FDT 2023
+ 20:07:34  Beginning Analysis
+
+ 20:07:34  Simcenter NASTRAN Authorization Information - System Attributes
+ 20:07:34  --------------------------------------------------------
+ 20:07:34  Model: 11th Gen Intel(R) Core(TM) i5-11
+ 20:07:34  Machine: Intel64 Family 6 Model 167 Stepp
+ 20:07:34  OS: Windows 10
+ 20:07:34  Version:
+ 20:07:34  License File(s): 28000@teamcenter.aalto.fi
+
+
+ 20:07:34  Simcenter NASTRAN Licensing Information
+ 20:07:34  --------------------------------------
+ 20:07:34  Sold To ID:            12645 - Aalto-yliopisto
+ 20:07:34  Webkey Access Code:    JMYT568OMS
+ 20:07:34  License File Issuer:   SIEMENS
+
+
+ 20:07:34  Simcenter NASTRAN Authorization Information - Checkout Successful
+ 20:07:34  -----------------------------------------------------------------
+ 20:07:34  License for module Simcenter Nastran Basic - NX Desktop (Bundle)  checked out successfully
+
+ 20:07:34  Loading Shared Library C:\Siemens\NX2027\nxcae_extras\tmg\exe\mayamoncomm.dll
+
+Starting viewer with UGII_MONITOR_DIR set to 'C:\Siemens\NX2027\nxcae_extras\tmg\exe'
+Starting monitor viewer at C:\Siemens\NX2027\nxcae_extras\tmg\exe/xcsmon_viewer.exe
+ 20:07:35  Viewer API version is:    11
+ 20:07:35  Viewer API minor version is:     6
+ 20:07:35  Monitor Version Info: Simcenter 3D Simulation Control Monitor 2022.1.5 Apr 05 2022 (Version 2007.170379)
+
+ 20:07:36  Analysis started.
+ 20:07:36  Geometry access/verification to CAD part initiated (if needed).
+ 20:07:36  Geometry access/verification to CAD part successfully completed (if needed).
+ 20:07:36  Finite element model generation started.
+ 20:07:36  Finite element model generated 80292 degrees of freedom.
+ 20:07:36  Finite element model generation successfully completed.
+ 20:07:36  Application of Loads and Boundary Conditions to the finite element model started.
+ 20:07:36  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 20:07:37  Solution of the system equations for linear statics started.
+ 20:07:37  Solution of the system equations for linear statics successfully completed.
+ 20:07:37  Linear static analysis completed.
+ 20:07:56  NSEXIT: EXIT(0)
+ 20:07:57  Analysis complete  0
+Real:       22.421 seconds ( 0:00:22.421)
+User:        1.546 seconds ( 0:00:01.546)
+Sys:         0.453 seconds ( 0:00:00.453)
+Simcenter Nastran finished Sun Oct  1 20:07:57 FDT 2023

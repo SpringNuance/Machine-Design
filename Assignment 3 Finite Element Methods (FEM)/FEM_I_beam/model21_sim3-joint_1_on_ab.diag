@@ -1,0 +1,70 @@
+
+*** 04:47:08 *** 
+Starting Nastran Exporter
+
+*** 04:47:08 *** 
+Writing file C:\Users\springnuance\Desktop\Machine-Design\Assignment 3 Finite 
+Element Methods (FEM)\FEM_I_beam\model21_sim3-joint_1_on_ab.dat
+ 
+*** 04:47:09 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 04:47:09 *** 
+Writing Nastran System section
+
+*** 04:47:09 *** 
+Writing File Management section
+
+*** 04:47:09 *** 
+Writing Executive Control section
+
+*** 04:47:09 *** 
+Writing Case Control section
+
+*** 04:47:09 *** 
+Writing Bulk Data section
+
+*** 04:47:09 *** 
+Writing Nodes
+
+*** 04:47:10 *** 
+Writing Elements
+
+*** 04:47:11 *** 
+Writing Physical Properties
+
+*** 04:47:11 *** 
+Writing Materials
+
+*** 04:47:11 *** 
+Writing Degree-of-Freedom Sets
+
+*** 04:47:11 *** 
+Writing Loads and Constraints
+
+*** 04:47:11 *** 
+Writing Coordinate Systems
+
+*** 04:47:11 *** 
+Validating Solution Setup
+
+*** 04:47:11 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 66111    |
+| FORCE    | 575      |
+| GRID     | 108340   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 874      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 04:47:11 *** 
+Nastran Deck Successfully Written
+

@@ -1,2 +1,11 @@
-Assignment 2 Multibody Simulation (MBS)/Dynamic Simulations In NX.mp4
-Assignment 2 Multibody Simulation (MBS)/Skeleton Model and Kinematic Simulation in NX.mp4
+# Ignore .mp4 video files
+*.mp4
+
+# Ignore .f06 and .op2 files, typically used in finite element analysis
+*.f06
+*.op2
+
+# Ignore .zip and .7z compressed files
+*.zip
+*.7z
+

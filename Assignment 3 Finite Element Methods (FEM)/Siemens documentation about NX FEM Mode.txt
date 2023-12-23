@@ -1,0 +1,2 @@
+Siemens documentation about NX FEM Mode
+Click https://docs.plm.automation.siemens.com/tdoc/nx/11.0.1/nx_help#uid:xid1128419:xid1128428 link to open resource.

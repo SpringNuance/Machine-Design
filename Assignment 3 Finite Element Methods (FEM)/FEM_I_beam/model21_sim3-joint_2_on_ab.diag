@@ -1,0 +1,69 @@
+
+*** 15:11:33 *** 
+Starting Nastran Exporter
+
+*** 15:11:33 *** 
+Writing file Z:\Documents\FEM\FEM\model21_sim3-joint_2_on_ab.dat
+
+*** 15:11:33 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 15:11:33 *** 
+Writing Nastran System section
+
+*** 15:11:33 *** 
+Writing File Management section
+
+*** 15:11:33 *** 
+Writing Executive Control section
+
+*** 15:11:33 *** 
+Writing Case Control section
+
+*** 15:11:33 *** 
+Writing Bulk Data section
+
+*** 15:11:33 *** 
+Writing Nodes
+
+*** 15:13:04 *** 
+Writing Elements
+
+*** 15:13:59 *** 
+Writing Physical Properties
+
+*** 15:13:59 *** 
+Writing Materials
+
+*** 15:13:59 *** 
+Writing Degree-of-Freedom Sets
+
+*** 15:13:59 *** 
+Writing Loads and Constraints
+
+*** 15:14:00 *** 
+Writing Coordinate Systems
+
+*** 15:14:00 *** 
+Validating Solution Setup
+
+*** 15:14:00 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 64484    |
+| FORCE    | 644      |
+| GRID     | 106708   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 816      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 15:14:00 *** 
+Nastran Deck Successfully Written
+

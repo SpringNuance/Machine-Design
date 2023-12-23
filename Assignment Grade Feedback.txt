@@ -1,0 +1,44 @@
+Preliminary Design Report
+Grade	4.00 / 5.00
+Graded on	Wednesday, 20 September 2023, 4:25 PM
+Graded by	Kaur Jaakma
+Feedback comments	
+Intro OK, material selection not needed yet and causes confusion, good machine picture, in methods usually how the work was done is presented - 
+not results like requirements, good requirements (is it max load capacity?), good operation principle pictures, detailed FBD, short discussion, 
+no learning outcomes, no group working rules, good references
+
+
+MBS Report
+Grade	4.00 / 5.00
+Graded on	Friday, 29 September 2023, 2:18 PM
+Graded by	Kaur Jaakma
+Feedback comments	
+Good intro, good kutzbach (perhaps mark joints better in the picture - now little hard to see), detailed skeleton presentation (perhaps also show 
+the joint types in the picture - yes, they should be the same as in kutzbach, but just to make it clear), Figure 5 is same as Figure 4, no presentation 
+of actuator and its values with kinematic simulation, detailed presentation of dynamic simulation model and parts, good presentation of joint movement 
+and velocities (perhaps show locations in the same x-y graph?), why only Z force graphs?, show max/min forces with table, joint 4 torque was only needed 
+but good presentation of all of them), good power calculation, good animation (perhaps hide coord sys?), validation chapter quite short (tell how 
+you could check that your motion simulations are correct), learning outcomes own sentence ends in the middle?, good learning outcomes, ok references
+
+
+FEM Report
+Grade	5.00 / 5.00
+Graded on	Friday, 13 October 2023, 1:58 PM
+Graded by	Kaur Jaakma
+Feedback comments	
+Good intro (different phases are more methods), good presentation of updated CAD models, good presentation of meshes, good presentation of FEM models, 
+good results and summary table, good testing of different shapes, detailed presentation of optimization study (goal was weight and not stress?), good 
+rerun of MBS (interesting change in the results - perhaps original was missing load from oil?),  good validation chapter, good learning outcomes
+
+
+Detailed Design Report
+Grade	4.00 / 5.00
+Graded on	Friday, 3 November 2023, 9:41 AM
+Graded by	Kaur Jaakma
+Feedback comments	
+Good intro, detailed bearing selection, actuator not selected (only bearing for it?), good lubricant selection, good material selection, good lifetime 
+estimate, good renderings, good requirements met discussion, detailed design process discussion, good cost estimate, BOM is missing selected components, 
+good video, good discussion and learning outcomes
+
+
+

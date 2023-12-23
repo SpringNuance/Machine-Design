@@ -1,0 +1,7 @@
+Feedback for Detailed Design Report from Professor:
+5/5
+Feedback:
+  
+Good cover, good intro, detailed component selection, good material selection, perhaps show lifetime calculation method here?, 
+nice CAD update and mechanism rendering, good requirements met chapter, detailed process chapter, detailed cost estimate, 
+good BOM (missing bearings), detailed learning outcomes, good video (perhaps hide those skeleton sketches?)

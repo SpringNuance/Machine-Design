@@ -1,0 +1,71 @@
+
+*** 18:51:26 *** 
+Starting Nastran Exporter
+
+*** 18:51:26 *** 
+Writing file 
+\\home.org.aalto.fi\singhp2\data\Documents\MechanicsmReport\DYNAMIC_3D_ZOOM 
+(2)\DYNAMIC_3D_ZOOM\model21_sim3-solution_2.dat
+ 
+*** 18:51:26 *** 
+Writing SIMCENTER NASTRAN 2022.1 compatible deck
+
+*** 18:51:26 *** 
+Writing Nastran System section
+
+*** 18:51:26 *** 
+Writing File Management section
+
+*** 18:51:26 *** 
+Writing Executive Control section
+
+*** 18:51:26 *** 
+Writing Case Control section
+
+*** 18:51:26 *** 
+Writing Bulk Data section
+
+*** 18:51:26 *** 
+Writing Nodes
+
+*** 18:51:30 *** 
+Writing Elements
+
+*** 18:51:32 *** 
+Writing Physical Properties
+
+*** 18:51:32 *** 
+Writing Materials
+
+*** 18:51:32 *** 
+Writing Degree-of-Freedom Sets
+
+*** 18:51:32 *** 
+Writing Loads and Constraints
+
+*** 18:51:32 *** 
+Writing Coordinate Systems
+
+*** 18:51:32 *** 
+Validating Solution Setup
+
+*** 18:51:32 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 67651    |
+| FORCE    | 475      |
+| GRID     | 108432   |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 646      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 18:51:32 *** 
+Nastran Deck Successfully Written
+
